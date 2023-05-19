@@ -32,6 +32,9 @@ class AlbumModel extends Equatable {
 
   String toJson() => json.encode(toMap());
 
+  factory AlbumModel.fromJson(String str) =>
+      AlbumModel.fromMap(json.decode(str));
+
   @override
   String toString() {
     return 'AlbumModel{userId: $userId, id: $id, title: $title}';
