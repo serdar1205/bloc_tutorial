@@ -1,7 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:bloc_tutorial/data/error/app_error.dart';
 import 'package:bloc_tutorial/logic/extension/add_without_duplicate.dart';
-import 'package:meta/meta.dart';
 
 part 'app_error_event.dart';
 part 'app_error_state.dart';
@@ -18,7 +17,7 @@ class AppErrorBloc extends Bloc<AppErrorEvent, AppErrorState> {
       }
     });
 
-    on<AppErrorRomoveEvent>((event, emit) {
+    on<AppErrorRemoveEvent>((event, emit) {
       errors.remove(event.error);
 
       if (errors.isNotEmpty) {

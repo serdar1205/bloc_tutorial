@@ -19,6 +19,7 @@ class ApiClient {
 
 class ApiLoader {
   final String path;
+
   /// future type - ly responce clasy alyan function --- variable
   late Future<Response> Function() loader;
 

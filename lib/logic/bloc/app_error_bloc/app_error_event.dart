@@ -10,6 +10,6 @@ class AppErrorAddEvent extends AppErrorEvent {
   const AppErrorAddEvent(super.error);
 }
 
-class AppErrorRomoveEvent extends AppErrorEvent {
-  const AppErrorRomoveEvent(super.error);
+class AppErrorRemoveEvent extends AppErrorEvent {
+  const AppErrorRemoveEvent(super.error);
 }
